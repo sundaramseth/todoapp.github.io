@@ -1,0 +1,112 @@
+.mat-expansion-panel-body{padding:0 10px 16px !important;}
+.example-container {
+    width: 400px;
+    max-width: 100%;
+    margin: 20px 0;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 5px;
+    background: #f2f3ff;
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+  }
+  
+  .colnew{
+    padding: 8px 2px 4px !important;
+    margin: 10px 0px;
+    background: #e1e1e1;
+    border-radius:6px !important;
+  }
+  .chips{
+    padding: 3px 6px;
+      border-radius: 50%;
+      font-size: 12px;
+      background: white;
+  }
+  .w100{
+    width: 100% !important;
+  }
+  
+  .h2{
+    display: flex;
+      margin: 0px;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      padding: 5px 15px;
+      font-weight: 500;
+      border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  }
+  
+  .example-list {
+    border:0px;
+    min-height: 40px;
+    background: white;
+    border-radius: 0px;
+    overflow: hidden;
+    display: block;
+    border-radius:6px !important;
+    box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 2%), 0px 2px 0px 0px rgb(0 0 0 / 3%), 0px 3px 1px 0px rgb(0 0 0 / 3%);
+  }
+  mat-panel-title
+  {
+    text-transform: capitalize;font-size: 14px; line-height: 21px;font-weight: 500;
+  }
+  mat-panel-description{
+    display: contents !important;
+  }
+  
+  .mat-expansion-panel-header{
+    padding: 0px 20px !important;
+  }
+  
+  .border0{
+    border-radius: 0px !important;
+  }
+  .example-box {
+    padding: 0px 0px;
+    border-bottom: none;
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    cursor: move;
+    background: white;
+    font-size: 14px;
+  }
+  
+  .cdk-drag-preview {
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+                0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  }
+  
+  .cdk-drag-placeholder {
+    opacity: 0;
+  }
+  
+  .cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  }
+  
+  .example-box:last-child {
+    border: none;
+  }
+  
+  .example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  }
+  
+  .box{
+    display: flex;
+  }
+  
+
+  @import '~ngx-toastr/toastr-bs4-alert';

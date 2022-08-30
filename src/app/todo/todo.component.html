@@ -1,0 +1,59 @@
+
+<!-- Add Task start -->
+<h1 mat-dialog-title>Add Your New Task</h1>
+<div class="row" mat-dialog-content>
+<div class="col" style="background:#c7d0ff; padding:8px; " >
+<mat-card>
+<form  #taskForm="ngForm" (ngSubmit)="onSubmit(taskForm)">
+
+  <div class="form-group">
+    <mat-form-field appearance="outline" style=" width: 100% !important;">
+    <mat-label>Task Name</mat-label>
+    <input matInput placeholder="Enter"  [(ngModel)]="task.description" name="description" #name="ngModel" >
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    <mat-hint>Please Enter Your Task</mat-hint>
+ </mat-form-field>
+ </div>
+
+ <div class="form-group">
+ <mat-form-field class="example-full-width" appearance="outline" style=" width: 100% !important;">
+  <mat-label>Description</mat-label>
+  <input matInput maxlength="500" placeholder="Enter Task descriptions" name="taskdescription" [(ngModel)]="task.taskdescription" #name="ngModel" >
+  <mat-hint>Please Enter Your Task Description</mat-hint>
+</mat-form-field>
+</div>
+
+<div class="form-group">
+ <mat-form-field appearance="outline" style=" width: 100% !important;">
+  <mat-label>Select an option</mat-label>
+  <mat-select disableRipple  [(ngModel)]="task.complex" name="complex" #name="ngModel" >
+    <mat-option value="Low">Low</mat-option>
+    <mat-option value="High">High</mat-option>
+    <mat-option value="Critical">Critical</mat-option>
+  </mat-select>
+  <mat-hint>Choose Your Complexity</mat-hint>
+</mat-form-field>
+</div>
+<div class="form-group">
+  <mat-form-field class="example-full-width" appearance="outline" style=" width: 100% !important;">
+   <mat-label>Image URL</mat-label>
+   <input matInput maxlength="500" placeholder="Enter Image URL" name="imageURL" [(ngModel)]="task.imageURL" #name="ngModel" >
+ </mat-form-field>
+ </div>
+
+<div *ngIf="editTasks" class="form-group">
+   <label>Image</label>
+<input #inputField type="file" (change)="uploadFile($event, task)" />
+</div>
+
+<div class="form-group">
+ <button type="submit"  mat-raised-button color="primary" [disabled]="!taskForm.valid" >{{actionBtn}}</button>
+</div>
+
+</form>
+  </mat-card>
+</div>
+  </div>
+
+<!-- Add Task End -->
+
